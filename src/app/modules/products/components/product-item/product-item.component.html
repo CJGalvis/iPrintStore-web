@@ -1,0 +1,30 @@
+<mat-card class="example-card mat-elevation-z4">
+  <img
+    mat-card-image
+    width="200px"
+    height="200px"
+    [src]="productItem.img"
+    alt="Photo of a Shiba Inu"
+  />
+  <mat-card-title class="title-item no-margin">
+    {{ productItem.name | titlecase }}
+  </mat-card-title>
+
+  <mat-card-content class="no-margin">
+    <p class="text-description">
+      {{ productItem.description }}
+    </p>
+  </mat-card-content>
+
+  <mat-card-subtitle class="no-margin subtitle-item">
+    {{ productItem.price | currency }}
+  </mat-card-subtitle>
+  <mat-card-actions class="no-padding">
+    <button mat-icon-button>
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>favorite_border</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

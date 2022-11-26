@@ -1,1 +1,37 @@
-<p>landing works!</p>
+<div class="main-landing" fxLayout="row" fxLayoutAlign="space-around center">
+  <div class="main-information" fxLayout="column" fxLayoutGap="25px">
+    <!-- Títulos -->
+    <div fxLayout="column">
+      <h1 class="title-section">Productos personalizados</h1>
+      <h3 class="subtitle-section">Crea y descubre tu propia marca</h3>
+    </div>
+    <!-- Items -->
+    <div class="main-items-list" fxLayout="column">
+      <div
+        *ngFor="let item of itemInformationList"
+        class="main-item"
+        fxLayout="row"
+        fxLayoutGap="5px"
+        fxLayoutAlign="start center"
+      >
+        <mat-icon color="primary">check</mat-icon>
+        <span>{{ item }}</span>
+      </div>
+    </div>
+    <!-- Botones -->
+    <div class="buttons-actions" fxLayout="row" fxLayoutAlign="space-between">
+      <button fxFlex="40" mat-raised-button color="primary">Diseñar</button>
+      <button fxFlex="40" mat-stroked-button color="primary">Catálogo</button>
+    </div>
+  </div>
+
+  <div fxLayout="column">
+    <img
+      class="svg-main"
+      src="assets/svg/undraw/undraw_Online_shopping_re_k1sv.svg"
+      alt="icon desing"
+    />
+  </div>
+</div>
+<br />
+<br />

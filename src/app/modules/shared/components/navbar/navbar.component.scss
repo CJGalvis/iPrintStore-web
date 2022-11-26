@@ -1,0 +1,21 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.main-menu {
+  margin-left: 25px;
+}
+
+.menu-item {
+  margin: 0 10px 0 10px;
+  font-size: medium;
+  font-weight: 450;
+  a {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+  }
+}
+
+.menu-item > a:hover {
+  color: #3f51b5
+}

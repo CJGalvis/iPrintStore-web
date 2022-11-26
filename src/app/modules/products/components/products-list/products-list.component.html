@@ -1,0 +1,12 @@
+<div fxLayout="column">
+  <div fxLayout="column">
+    <h1>Productos catalogados</h1>
+
+    <div class="container-products-list">
+      <app-product-item
+        [productItem]="item"
+        *ngFor="let item of productList"
+      ></app-product-item>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,38 @@
-<p>navbar works!</p>
+<mat-toolbar class="mat-elevation-z4">
+  <button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>
+    <a routerLink="/"> IPrintStore</a>
+  </span>
+  <div class="main-menu">
+    <span class="menu-item">
+      <a routerLink="/desing" routerLinkActive="active">Diseñar</a>
+    </span>
+    <span class="menu-item">
+      <a routerLink="/list" routerLinkActive="active">Catálogo</a>
+    </span>
+    <span class="menu-item">
+      <a routerLink="/products" routerLinkActive="active">Productos</a>
+    </span>
+    <span class="menu-item">
+      <a routerLink="/delivery" routerLinkActive="active">Entregas</a>
+    </span>
+    <span class="menu-item">
+      <a routerLink="/about" routerLinkActive="active">Nosotros</a>
+    </span>
+  </div>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    matBadge="8"
+    matBadgePosition="before"
+    matBadgeColor="primary"
+    matTooltip="Ir al carrito"
+  >
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+  <button mat-icon-button matTooltip="Iniciar sesión">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+</mat-toolbar>
